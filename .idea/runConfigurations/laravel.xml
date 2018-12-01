@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="laravel" type="PhpLocalRunConfigurationType" factoryName="PHP Console" singleton="true" path="$PROJECT_DIR$/artisan" scriptParameters="serve">
+    <method v="2">
+      <option name="LaunchBrowser.Before.Run" browser="e5120d43-2c3f-47ef-9f26-65e539e05186" url="http://localhost:8000" />
+    </method>
+  </configuration>
+</component>
