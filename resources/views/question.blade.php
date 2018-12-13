@@ -18,17 +18,19 @@
                         </a>
 
                         {{ Form::open(['method'  => 'DELETE', 'route' => ['question.destroy', $question->id]])}}
+                        <input type="hidden" id="" value="">  {{ Honeypot::generate('my_name', 'my_time') }}></input>
                         <button class="btn btn-danger float-right mr-2" value="submit" type="submit" id="submit">Delete
                         </button>
+
+
                         {!! Form::close() !!}
                     </div>
                 </div>
             </div>
-
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-header"><a class="btn btn-primary float-left"
-                                                href="#">
+                                                href="{{ route('answers.create', ['question_id'=> $question->id])}}">
                             Answer Question
                         </a></div>
 
@@ -56,4 +58,5 @@
                     </div>
                 </div>
             </div>
+
 @endsection

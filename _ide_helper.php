@@ -3,13 +3,109 @@
 
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.7.15 on 2018-12-11 02:55:10.
+ * Generated for Laravel 5.7.15 on 2018-12-13 16:01:40.
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
  */
+
+namespace Msurguy\Honeypot { 
+
+    /**
+     * 
+     *
+     */ 
+    class HoneypotFacade {
+        
+        /**
+         * Enable the Honeypot validation
+         *
+         * @static 
+         */ 
+        public static function enable()
+        {
+            return \Msurguy\Honeypot\Honeypot::enable();
+        }
+        
+        /**
+         * Disable the Honeypot validation
+         *
+         * @static 
+         */ 
+        public static function disable()
+        {
+            return \Msurguy\Honeypot\Honeypot::disable();
+        }
+        
+        /**
+         * Generate a new honeypot and return the form HTML
+         *
+         * @param string $honey_name
+         * @param string $honey_time
+         * @return string 
+         * @static 
+         */ 
+        public static function generate($honey_name, $honey_time)
+        {
+            return \Msurguy\Honeypot\Honeypot::generate($honey_name, $honey_time);
+        }
+        
+        /**
+         * Validate honeypot is empty
+         *
+         * @param string $attribute
+         * @param mixed $value
+         * @param array $parameters
+         * @return boolean 
+         * @static 
+         */ 
+        public static function validateHoneypot($attribute, $value, $parameters)
+        {
+            return \Msurguy\Honeypot\Honeypot::validateHoneypot($attribute, $value, $parameters);
+        }
+        
+        /**
+         * Validate honey time was within the time limit
+         *
+         * @param string $attribute
+         * @param mixed $value
+         * @param array $parameters
+         * @return boolean 
+         * @static 
+         */ 
+        public static function validateHoneytime($attribute, $value, $parameters)
+        {
+            return \Msurguy\Honeypot\Honeypot::validateHoneytime($attribute, $value, $parameters);
+        }
+        
+        /**
+         * Get encrypted time
+         *
+         * @return string 
+         * @static 
+         */ 
+        public static function getEncryptedTime()
+        {
+            return \Msurguy\Honeypot\Honeypot::getEncryptedTime();
+        }
+        
+        /**
+         * Decrypt the given time
+         *
+         * @param mixed $time
+         * @return string|null 
+         * @static 
+         */ 
+        public static function decryptTime($time)
+        {
+            return \Msurguy\Honeypot\Honeypot::decryptTime($time);
+        }
+         
+    }
+ 
+}
 
 namespace Illuminate\Support\Facades { 
 
@@ -13731,6 +13827,108 @@ namespace Illuminate\Support\Facades {
  
 }
 
+namespace Anhskohbo\NoCaptcha\Facades { 
+
+    /**
+     * 
+     *
+     */ 
+    class NoCaptcha {
+        
+        /**
+         * Render HTML captcha.
+         *
+         * @param array $attributes
+         * @return string 
+         * @static 
+         */ 
+        public static function display($attributes = array())
+        {
+            return \Anhskohbo\NoCaptcha\NoCaptcha::display($attributes);
+        }
+        
+        /**
+         * 
+         *
+         * @see display()
+         * @static 
+         */ 
+        public static function displayWidget($attributes = array())
+        {
+            return \Anhskohbo\NoCaptcha\NoCaptcha::displayWidget($attributes);
+        }
+        
+        /**
+         * Display a Invisible reCAPTCHA by embedding a callback into a form submit button.
+         *
+         * @param string $formIdentifier the html ID of the form that should be submitted.
+         * @param string $text the text inside the form button
+         * @param array $attributes array of additional html elements
+         * @return string 
+         * @static 
+         */ 
+        public static function displaySubmit($formIdentifier, $text = 'submit', $attributes = array())
+        {
+            return \Anhskohbo\NoCaptcha\NoCaptcha::displaySubmit($formIdentifier, $text, $attributes);
+        }
+        
+        /**
+         * Render js source
+         *
+         * @param null $lang
+         * @param bool $callback
+         * @param string $onLoadClass
+         * @return string 
+         * @static 
+         */ 
+        public static function renderJs($lang = null, $callback = false, $onLoadClass = 'onloadCallBack')
+        {
+            return \Anhskohbo\NoCaptcha\NoCaptcha::renderJs($lang, $callback, $onLoadClass);
+        }
+        
+        /**
+         * Verify no-captcha response.
+         *
+         * @param string $response
+         * @param string $clientIp
+         * @return bool 
+         * @static 
+         */ 
+        public static function verifyResponse($response, $clientIp = null)
+        {
+            return \Anhskohbo\NoCaptcha\NoCaptcha::verifyResponse($response, $clientIp);
+        }
+        
+        /**
+         * Verify no-captcha response by Symfony Request.
+         *
+         * @param \Request $request
+         * @return bool 
+         * @static 
+         */ 
+        public static function verifyRequest($request)
+        {
+            return \Anhskohbo\NoCaptcha\NoCaptcha::verifyRequest($request);
+        }
+        
+        /**
+         * Get recaptcha js link.
+         *
+         * @param string $lang
+         * @param boolean $callback
+         * @param string $onLoadClass
+         * @return string 
+         * @static 
+         */ 
+        public static function getJsLink($lang = null, $callback = false, $onLoadClass = 'onloadCallBack')
+        {
+            return \Anhskohbo\NoCaptcha\NoCaptcha::getJsLink($lang, $callback, $onLoadClass);
+        }
+         
+    }
+ 
+}
+
 namespace Collective\Html { 
 
     /**
@@ -14440,6 +14638,16 @@ namespace Collective\Html {
         {
             return \Collective\Html\FormBuilder::componentCall($method, $parameters);
         }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function captcha($attributes = array())
+        {
+            return \Collective\Html\FormBuilder::Anhskohbo\NoCaptcha\{closure}($attributes);
+        }
          
     }
 
@@ -14848,6 +15056,8 @@ namespace Collective\Html {
 
 
 namespace  { 
+
+    class Honeypot extends \Msurguy\Honeypot\HoneypotFacade {}
 
     class App extends \Illuminate\Support\Facades\App {}
 
@@ -17247,6 +17457,8 @@ namespace  {
     class Validator extends \Illuminate\Support\Facades\Validator {}
 
     class View extends \Illuminate\Support\Facades\View {}
+
+    class NoCaptcha extends \Anhskohbo\NoCaptcha\Facades\NoCaptcha {}
 
     class Form extends \Collective\Html\FormFacade {}
 
