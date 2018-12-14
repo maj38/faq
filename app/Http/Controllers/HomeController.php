@@ -29,3 +29,5 @@ class HomeController extends Controller
         return view('home')->with('questions', $questions);
     }
 }
+
+
