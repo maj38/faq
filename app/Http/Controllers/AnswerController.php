@@ -78,7 +78,7 @@ class AnswerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $question, Answer $answer)
+    public function update(Request $request, $question, $answer)
     {
         $input = $request->validate([
             'body' => 'required|min:5',
@@ -87,7 +87,7 @@ class AnswerController extends Controller
             'body.min' => 'Body must be at least 5 characters',
         ]);
 
-         $answer = Answer::find($answer);
+        $answer = Answer::find($answer);
         $answer->body = $request->body;
         $answer->save();
         return redirect()->route('answers.show',['question_id' => $question, 'answer_id' => $answer])->with('message', 'Updated');

@@ -56,3 +56,13 @@ php artisan serve
 11. Change captch to recaptcha in line 56 RegisterController.php
 12.  Change captch to recaptcha in line 57 register.blade.php
 
+
+Honeypot 
+
+1. added following to web.php line 18
+
+Route::get('myform', function()
+{
+    return View::make('myapp');
+});
+

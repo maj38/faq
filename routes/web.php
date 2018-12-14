@@ -15,11 +15,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('myform', function()
+{
+    return View::make('myapp');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/user/{user_id}/profile/{profile_id}', 'ProfileController@show')->name('profile.show');
-Route::get('/questions/{question_id}/answers/{answer_id}', 'AnswerController@show')->name('answers.show');
 
 Route::get('/user/{user_id}/profile', 'ProfileController@create')->name('profile.create');
 Route::get('/user/{user_id}/profile/{profile_id}', 'ProfileController@show')->name('profile.show');
