@@ -66,3 +66,4 @@ Route::get('myform', function()
     return View::make('myapp');
 });
 
+// line 51 - 55 recaptch register.blade.php//
