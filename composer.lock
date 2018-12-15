@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c384b0fbdbff9679708a6c95cb34ed28",
+    "content-hash": "c311a69bb971e0fe9147a8f18ec3fe52",
     "packages": [
         {
             "name": "anhskohbo/no-captcha",
@@ -490,6 +490,70 @@
                 "performance"
             ],
             "time": "2018-11-29T10:59:02+00:00"
+        },
+        {
+            "name": "devarjhay/honeypot",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/devarjhay/honeypot.git",
+                "reference": "2f1055971223e8e368af213a1b3ec6fede74c42a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/devarjhay/honeypot/zipball/2f1055971223e8e368af213a1b3ec6fede74c42a",
+                "reference": "2f1055971223e8e368af213a1b3ec6fede74c42a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "5.*",
+                "illuminate/support": "5.*",
+                "illuminate/translation": "5.*",
+                "php": ">=5.6.4"
+            },
+            "require-dev": {
+                "mockery/mockery": "^0.9.9",
+                "phpunit/phpunit": "^6.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "DevArjhay\\Honeypot\\Providers\\HoneypotServiceProvider"
+                    ],
+                    "aliases": {
+                        "Honeypot": "DevArjhay\\Honeypot\\Facades\\Honeypot"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DevArjhay\\Honeypot\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Arjhay Delos Santos",
+                    "email": "developer.arjhay@gmail.com"
+                }
+            ],
+            "description": "A simple spam protection for Laravel 5.4 and 5.5.",
+            "keywords": [
+                "Forms",
+                "Honeypot",
+                "devarjhay",
+                "honeytime",
+                "laravel",
+                "spam"
+            ],
+            "time": "2018-03-08T12:01:42+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",

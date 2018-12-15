@@ -3,7 +3,11 @@
 
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
+<<<<<<< Updated upstream
  * Generated for Laravel 5.7.15 on 2018-12-14 00:47:47.
+=======
+ * Generated for Laravel 5.7.15 on 2018-12-15 00:12:07.
+>>>>>>> Stashed changes
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
@@ -11,13 +15,13 @@
  * @see https://github.com/barryvdh/laravel-ide-helper
  */
 
-namespace Msurguy\Honeypot { 
+namespace DevArjhay\Honeypot\Facades { 
 
     /**
      * 
      *
      */ 
-    class HoneypotFacade {
+    class Honeypot {
         
         /**
          * Enable the Honeypot validation
@@ -15057,7 +15061,7 @@ namespace Collective\Html {
 
 namespace  { 
 
-    class Honeypot extends \Msurguy\Honeypot\HoneypotFacade {}
+    class Honeypot extends \DevArjhay\Honeypot\Facades\Honeypot {}
 
     class App extends \Illuminate\Support\Facades\App {}
 

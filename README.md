@@ -10,7 +10,7 @@ To run the FAQ project:
 Adding Captcha (honeypot) for security (spams)
 
 1. Added Captcha_Key and Captcha_secret in .env file
-2. Added <script src='https://www.google.com/recaptcha/api.js'></script> to app.blade.php in line 14
+2. Added <script src='https://www.google.com/recaptcha/api.js'></script> to app.blade.php in line 15
 3. Added in register.blade.php line 51
                                <div class="form-group row">
                                      <div class="col-md-6 offset-md-4">
