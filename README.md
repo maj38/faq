@@ -67,3 +67,9 @@ Route::get('myform', function()
 });
 
 // line 51 - 55 recaptch register.blade.php//
+
+
+HONEYPOT
+
+"Honeypot" method of spam prevention is an effective way to protect your site from spam bots.
+An input field is created that should be left empty by the real user of the site but will be filled by the spam bot.
