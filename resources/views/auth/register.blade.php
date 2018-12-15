@@ -50,6 +50,12 @@
 
                         <div class="form-group row">
                             <div class="col-md-6 offset-md-4">
+                        <div class="g-recaptcha" data-sitekey="6LdO-YEUAAAAAIXOR5B0s9_zPOxpV5qL0ua7SkyB"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-6 offset-md-4">
 
                             @if($errors->has('g-recaptcha-response'))
                                 <span class="invalid-feedback" style="display:block">
