@@ -1,5 +1,5 @@
 
-HONEYPOT 
+-------------HONEYPOT----------------- 
 
 "Honeypot" method of spam prevention is an effective way to protect your site from spam bots.
 An input field is created that should be left empty by the real user of the site but will be filled by the spam bot.
@@ -50,7 +50,7 @@ $validator = Validator::make(Input::get(), $rules);
 
 
 
-CAPTCHA
+-------------CAPTCHA----------------------
 a program intended to distinguish human from machine input, 
 way of thwarting spam and automated extraction of data from websites.
 
