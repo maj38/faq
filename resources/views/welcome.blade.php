@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>IS601 Final Mohamad Javed</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
@@ -81,16 +81,13 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    WELCOME TO MY FINAL PROJECT IS601
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="https://mohamadjaved.weebly.com/">Undergrad Projects</a>
+                    <a href="https://www.youtube.com/user/gugla9375">Youtube Projects</a>
+                    <a href="https://github.com/maj38">My GitHub</a>
                 </div>
             </div>
         </div>
