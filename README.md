@@ -51,7 +51,8 @@ $validator = Validator::make(Input::get(), $rules);
 
 
 -------------CAPTCHA----------------------
-a program intended to distinguish human from machine input, 
+
+A program intended to distinguish human from machine input, 
 way of thwarting spam and automated extraction of data from websites.
 
 1) Add Captcha_Key and Captcha_secret in .env file
