@@ -3,6 +3,11 @@ HONEYPOT
 
 "Honeypot" method of spam prevention is an effective way to protect your site from spam bots.
 An input field is created that should be left empty by the real user of the site but will be filled by the spam bot.
+This package creates a hidden <DIV> with two fields in it, honeypot field my name and a honeytime field,
+an encrypted timestamp and notes the time when the page was served to user. When the form containing these inputs (invisible to the user) 
+is submitted to your application, a custom validator that comes with the package checks that the honeypot field is empty 
+and also checks the time it took for the user to fill out the form. If the form was filled out too quickly (i.e. less than 5 seconds) 
+or if there was a value put in the honeypot field, this submission is most likely from a spam bot.
 
 Steps:
 
