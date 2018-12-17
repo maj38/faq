@@ -44,9 +44,12 @@ $rules = array(
 $validator = Validator::make(Input::get(), $rules);
 
 
-7) Disable it by this code 
+7) Disable it by the following code to test it. 
+Once disabled, validation will pass.  
 
   Honeypot::disable();
+  
+  
 
 
 
